@@ -38,12 +38,12 @@ Saved in: @code{General.OptionsFileName}
 
 @item General.BuildInfo
 Gmsh build information (read-only)@*
-Default value: @code{"Version: 4.9.0-git-704a84594; License: GNU General Public License; Build OS: MacOSX-sdk; Build date: 20211120; Build host: MacBook-Pro-Christophe.local; Build options: 64Bit ALGLIB ANN Bamg Blossom Cairo Cgns DIntegration Dlopen DomHex Eigen Fltk GMP Gmm Hxt Jpeg Kbipack MathEx Med Mesh Metis[system] Mmg Mpeg Netgen ONELAB ONELABMetamodel OpenCASCADE OpenCASCADE-CAF OpenGL OpenMP OptHom Parasolid ParasolidSTEP Parser Plugins Png Post QuadMeshingTools QuadTri Solver TetGen/BR TouchBar Voro++ WinslowUntangler Zlib; FLTK version: 1.4.0; OCC version: 7.6.0; MED version: 4.1.0; Packaged by: geuzaine; Web site: https://gmsh.info; Issue tracker: https://gitlab.onelab.info/gmsh/gmsh/issues"}@*
+Default value: @code{"Version: 4.11.1-git-516d090cd; License: GNU General Public License; Build OS: MacOSX-sdk; Build date: 20221205; Build host: MacBook-Pro-Christophe.local; Build options: 64Bit ALGLIB[contrib] ANN[contrib] Bamg Blas[petsc] Blossom Cairo Cgns DIntegration Dlopen DomHex Eigen[contrib] Fltk GMP Gmm[contrib] Hxt Jpeg Kbipack Lapack[petsc] MathEx[contrib] Med Mesh Metis[contrib] Mmg Mpeg Netgen ONELAB ONELABMetamodel OpenCASCADE OpenCASCADE-CAF OpenGL OpenMP OptHom PETSc Parasolid ParasolidSTEP Parser Plugins Png Post QuadMeshingTools QuadTri Solver TetGen/BR TouchBar Voro++[contrib] WinslowUntangler Zlib; FLTK version: 1.4.0; PETSc version: 3.14.4 (complex arithmtic); OCC version: 7.8.0; MED version: 4.1.0; Packaged by: geuzaine; Web site: https://gmsh.info; Issue tracker: https://gitlab.onelab.info/gmsh/gmsh/issues"}@*
 Saved in: @code{-}
 
 @item General.BuildOptions
 Gmsh build options (read-only)@*
-Default value: @code{"64Bit ALGLIB ANN Bamg Blossom Cairo Cgns DIntegration Dlopen DomHex Eigen Fltk GMP Gmm Hxt Jpeg Kbipack MathEx Med Mesh Metis[system] Mmg Mpeg Netgen ONELAB ONELABMetamodel OpenCASCADE OpenCASCADE-CAF OpenGL OpenMP OptHom Parasolid ParasolidSTEP Parser Plugins Png Post QuadMeshingTools QuadTri Solver TetGen/BR TouchBar Voro++ WinslowUntangler Zlib"}@*
+Default value: @code{"64Bit ALGLIB[contrib] ANN[contrib] Bamg Blas[petsc] Blossom Cairo Cgns DIntegration Dlopen DomHex Eigen[contrib] Fltk GMP Gmm[contrib] Hxt Jpeg Kbipack Lapack[petsc] MathEx[contrib] Med Mesh Metis[contrib] Mmg Mpeg Netgen ONELAB ONELABMetamodel OpenCASCADE OpenCASCADE-CAF OpenGL OpenMP OptHom PETSc Parasolid ParasolidSTEP Parser Plugins Png Post QuadMeshingTools QuadTri Solver TetGen/BR TouchBar Voro++[contrib] WinslowUntangler Zlib"}@*
 Saved in: @code{-}
 
 @item General.DefaultFileName
@@ -168,7 +168,7 @@ Saved in: @code{General.SessionFileName}
 
 @item General.Version
 Gmsh version (read-only)@*
-Default value: @code{"4.9.0-git-704a84594"}@*
+Default value: @code{"4.11.1-git-516d090cd"}@*
 Saved in: @code{-}
 
 @item General.WatchFilePattern
@@ -942,7 +942,7 @@ Default value: @code{0}@*
 Saved in: @code{General.OptionsFileName}
 
 @item General.NumThreads
-Set the maximum number of threads when Gmsh is compiled with OpenMP support (0: use system default, i.e. OMP_NUM_THREADS)@*
+Maximum number of threads used by Gmsh when compiled with OpenMP support (0: use system default, i.e. OMP_NUM_THREADS)@*
 Default value: @code{1}@*
 Saved in: @code{General.OptionsFileName}
 
@@ -1132,7 +1132,7 @@ Default value: @code{0}@*
 Saved in: @code{General.OptionsFileName}
 
 @item General.SystemMenuBar
-Use the system menu bar on Mac OS X?@*
+Use the system menu bar on macOS?@*
 Default value: @code{1}@*
 Saved in: @code{General.SessionFileName}
 

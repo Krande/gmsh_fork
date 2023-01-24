@@ -5,8 +5,8 @@ enable_occ=1
 enable_simulator=0
 #buildtype=Debug
 buildtype=Release
-version=2.3.4
-build=56 # must be incremented for each submitted build
+version=2.3.5
+build=58 # must be incremented for each submitted build
 
 while [[ $# -gt 0 ]]; do
   key="$1"
@@ -99,7 +99,7 @@ $headers_cmd
 mkdir -p $gmsh_framework/Headers
 cp $gmsh_git/build_${ios}/${buildtype}-${iphoneos}/libgmsh.a $gmsh_framework/gmsh
 cd $gmsh_framework/Headers
-cp $gmsh_git/build_${ios}/Headers/*.h $gmsh_git/build_${ios}/Headers/gmsh/* .
+cp -R $gmsh_git/build_${ios}/Headers/*.h $gmsh_git/build_${ios}/Headers/gmsh/* .
 ln -s . gmsh
 
 # build getdp framework
